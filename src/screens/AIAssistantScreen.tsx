@@ -36,6 +36,9 @@ export const AIAssistantScreen = ({ navigation }: any) => {
 
         <Text variant="titleLarge" style={styles.sectionTitle}>Medical Inquiry</Text>
         <TextInput
+          accessible={true}
+          accessibilityLabel="Type your medical symptoms or questions here"
+          accessibilityRole="text"
           style={styles.textInput}
           placeholder="E.g., I have a headache, what medication is available nearby?"
           multiline
