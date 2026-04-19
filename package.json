@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~55.0.9",
     "@google/generative-ai": "^0.24.1",
     "@react-native-firebase/app": "^24.0.0",
     "@react-native-google-signin/google-signin": "^16.1.2",
@@ -22,12 +23,14 @@
     "expo-updates": "~55.0.20",
     "notifee": "^0.0.1",
     "react": "19.2.0",
+    "react-dom": "19.2.0",
     "react-native": "0.83.4",
     "react-native-paper": "^5.15.1",
     "react-native-qrcode-svg": "^6.3.21",
     "react-native-safe-area-context": "~5.6.2",
     "react-native-screens": "~4.23.0",
     "react-native-svg": "15.15.3",
+    "react-native-web": "^0.21.0",
     "react-native-webview": "^13.16.1",
     "zustand": "^5.0.12"
   },
