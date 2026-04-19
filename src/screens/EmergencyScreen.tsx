@@ -59,12 +59,12 @@ export const EmergencyScreen = ({ navigation }: any) => {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} accessible={true} accessibilityRole="none">
       <View style={styles.header}>
-        <TouchableOpacity style={styles.closeButton} onPress={() => navigation.goBack()}>
+        <TouchableOpacity style={styles.closeButton} accessible={true} accessibilityRole="button" accessibilityLabel="Close emergency screen" onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons name="close" size={32} color="#1B5E20" />
         </TouchableOpacity>
-        <Text variant="titleLarge" style={styles.headerTitle}>Emergency Assistant</Text>
+        <Text variant="titleLarge" style={styles.headerTitle} accessibilityRole="header">Emergency Assistant</Text>
       </View>
 
       <View style={styles.content}>
