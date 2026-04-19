@@ -2,6 +2,9 @@
 
 **CareVenue AI** is a smart event health and medical assistance MVP built with React Native and Expo. Designed to protect the safety of stadium attendees, this mobile app gives event-goers a dedicated safety portal to report emergencies, view live facility maps, and dynamically consult an AI Medical Buddy.
 
+### 🚀 Live Demo
+Test the mobile app live in your browser: **[carevenue-mobile.vercel.app](https://carevenue-mobile.vercel.app/)**
+
 ### 🌐 Companion Web App
 Looking for the staff/medical control center? 
 👉 **[CareVenue Admin Dashboard Repository](https://github.com/Udit-prasad/carevenue-admin)**
