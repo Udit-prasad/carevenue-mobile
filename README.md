@@ -1,6 +1,11 @@
 # CareVenue AI 🏥🏟️
 
-**CareVenue AI** is a smart event health and medical assistance MVP built with React Native and Expo. Designed to protect the safety of stadium attendees, this mobile app gives event-goers a dedicated safety portal to report emergencies, view live facility maps, and dynamically consult an AI Medical Buddy.
+**CareVenue AI** is a smart event health and medical assistance MVP built with React Native and Expo. 
+
+### 💡 Problem Statement Alignment & Integration Flow
+Stadiums and large event venues struggle to coordinate real-time medical response, resulting in unsafe conditions for attendees during critical emergencies. Often, attendees lack a unified method to securely broadcast their location or medical history, while dispatchers suffer from disorganized communication channels.
+
+**The Solution:** This project bridges the gap by delivering a comprehensive **Emergency Alert System** and **Medicine Reminder Engine**. By synchronizing real-time Firebase locational grids with instantly readable **QR Emergency Medical Profiles**, stadium responders can instantly bypass bottlenecks to provide life-saving care.
 
 ### 🚀 Live Demo
 Test the mobile app live in your browser: **[carevenue-mobile.vercel.app](https://carevenue-mobile.vercel.app/)**
@@ -11,12 +16,13 @@ Looking for the staff/medical control center?
 
 ---
 
-## 🔥 Key Features
+## 🔥 Core Capabilities & Integrations
 
-* **Quick-Access QR Medical ID:** Instantly generate an offline, readable QR code summarizing your critical medical profile including blood group, allergies, and conditions.
-* **Instant SOS Emergency Alert:** Triggers an active alert syncing directly via Firebase Firestore to notify stadium responders to dispatch directly to your seat block.
-* **CareVenue AI Buddy:** Integrated tightly with **Groq (Llama-3)** for lightning-fast, ultra-low-latency clinical triaging and real-time medical advice.
-* **Live Interactive Venue Maps:** Utilizes embedded Google Maps to track your physical stadium or venue, giving you quick awareness of medical tents and exits.
+* **QR Emergency Medical Profile:** Instantly generate an offline, readable QR code summarizing your critical medical profile including blood group, allergies, and conditions.
+* **Instant SOS Emergency Alert System:** Triggers an active alert syncing directly via Firebase Firestore to notify stadium responders to dispatch directly to your seat block.
+* **Medicine Reminder Engine:** Smart integration to keep track of stadium attendee health during prolonged wait periods.
+* **CareVenue AI Buddy:** Integrated tightly with **Groq (Llama-3)** for lightning-fast, ultra-low-latency clinical triaging and real-time medical advice spanning broad problem edge cases.
+* **Smart Venue Health Map:** Utilizes embedded Google Maps to track your physical stadium or venue, giving you quick awareness of medical tents and exits, ensuring high accessibility for disabled users.
 
 ---
 

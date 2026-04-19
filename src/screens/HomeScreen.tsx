@@ -17,7 +17,7 @@ export const HomeScreen = ({ navigation }: any) => {
         <MaterialCommunityIcons name="seat" size={16} color="#A0A0B0" /> {seatInfo?.seatNumber}
       </Text>
 
-      <TouchableOpacity activeOpacity={0.8} onPress={() => navigation.navigate('Alert')}>
+      <TouchableOpacity accessible={true} accessibilityRole="button" accessibilityLabel="Open emergency alert system" activeOpacity={0.8} onPress={() => navigation.navigate('Alert')}>
         <Surface style={styles.emergencyBanner} elevation={4}>
           <MaterialCommunityIcons name="alert-plus" size={28} color="#FFF" />
           <View style={styles.bannerTextContainer}>
@@ -28,8 +28,8 @@ export const HomeScreen = ({ navigation }: any) => {
         </Surface>
       </TouchableOpacity>
 
-      <Text variant="titleLarge" style={styles.sectionTitle}>Smart Assistance</Text>
-      <TouchableOpacity activeOpacity={0.8} onPress={() => navigation.navigate('AIAssist')}>
+      <Text variant="titleLarge" style={styles.sectionTitle} accessibilityRole="header">Smart Assistance</Text>
+      <TouchableOpacity accessible={true} accessibilityRole="button" accessibilityLabel="Talk to CareVenue AI Buddy" activeOpacity={0.8} onPress={() => navigation.navigate('AIAssist')}>
         <Surface style={styles.aiBanner} elevation={2}>
           <View style={styles.aiIconBox}>
             <MaterialCommunityIcons name="robot" size={32} color="#FFFFFF" />
@@ -42,13 +42,13 @@ export const HomeScreen = ({ navigation }: any) => {
         </Surface>
       </TouchableOpacity>
 
-      <Text variant="titleLarge" style={[styles.sectionTitle, { marginTop: 20 }]}>Quick Actions</Text>
+      <Text variant="titleLarge" style={[styles.sectionTitle, { marginTop: 20 }]} accessibilityRole="header">Quick Actions</Text>
       <View style={styles.grid}>
-        <TouchableOpacity style={styles.gridItem} onPress={() => navigation.navigate('Map')}>
+        <TouchableOpacity accessible={true} accessibilityRole="button" accessibilityLabel="View live venue map" style={styles.gridItem} onPress={() => navigation.navigate('Map')}>
           <MaterialCommunityIcons name="map-search-outline" size={32} color="#2E7D32" />
           <Text style={styles.gridItemText}>Venue Map</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.gridItem} onPress={() => navigation.navigate('QR')}>
+        <TouchableOpacity accessible={true} accessibilityRole="button" accessibilityLabel="Scan Medical ID" style={styles.gridItem} onPress={() => navigation.navigate('QR')}>
           <MaterialCommunityIcons name="qrcode-scan" size={32} color="#2E7D32" />
           <Text style={styles.gridItemText}>Medical ID</Text>
         </TouchableOpacity>
